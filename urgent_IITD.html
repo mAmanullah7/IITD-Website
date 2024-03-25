@@ -1,0 +1,363 @@
+<html><head><title>SUMMER RESEARCH FELLOWSHIP PROGRAMME 2024</title>
+<link href="./iitdstyle.css" type="text/css" rel="STYLESHEET">
+<link rel="stylesheet" type="text/css" href="tcal.css">
+	<script type="text/javascript" src="tcal.js"></script>
+<script language="JavaScript">
+function getinstoth()
+{
+	var ele = document.getElementById("instoth");
+	var n = document.sclrship.inst.options.length; 
+	if (document.sclrship.inst.selectedIndex == n-1)
+	{
+		ele.style.display = "block";	
+	}
+	else
+	{		
+		document.sclrship.instothr.value="";
+		ele.style.display = "none";	
+	}
+}
+function getdgreoth()
+{
+	var ele = document.getElementById("dgreoth");
+	var n = document.sclrship.dgre.options.length; 
+	if (document.sclrship.dgre.selectedIndex == n-1)
+	{
+		ele.style.display = "block";	
+	}
+	else
+	{		
+		document.sclrship.dgreothr.value="";
+		ele.style.display = "none";	
+	}
+}
+function getareaoth()
+{
+	var ele = document.getElementById("aroth");
+	var n = document.sclrship.spec.options.length; 
+	if (document.sclrship.spec.selectedIndex == n-1)
+	{
+		ele.style.display = "block";	
+	}
+	else
+	{		
+		document.sclrship.arothr.value="";
+		ele.style.display = "none";	
+	}
+}
+function clrcmb()
+{
+	var ele = document.getElementById("gender");
+       ele.disabled = "";
+	ele = document.getElementById("inst");
+       ele.disabled = "";
+	ele = document.getElementById("dgre");
+       ele.disabled = "";
+	ele = document.getElementById("spec");
+       ele.disabled = "";
+	ele = document.getElementById("grdtyp");
+       ele.disabled = "";
+	document.sclrship.submit();
+}
+
+</script>
+</head>
+<body background="./bg.png" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div id="main" align="center">
+
+<table cellspacing="0" cellpadding="0" width="900" bgcolor="#FFFFFF" border="0">
+<tbody>
+<tr align="center"><td colspan="3" height="2"><img height="1" alt="" src="images/clear.gif" width="1" border="0"></td></tr>
+<tr align="center">
+<td valign="top" nowrap="" width="128" background="images/left_img.gif" height="81" rowspan="2"><a href="http://www.iitd.ac.in/"><img src="./iitlogo.jpg" alt="IIT Delhi" width="100" height="102" longdesc="http://www.iitd.ac.in"></a></td>
+<td nowrap="" width="438" align="center" background="images/left_img.gif" rowspan="2"><b><font style="FONT-SIZE: 28px" color="#800000">INDIAN INSTITUTE OF TECHNOLOGY DELHI</font><br><br>
+<font style="FONT-SIZE: 18px" color="#800000">Application For Summer Research Fellowship Programme 2024 at IIT Delhi</font></b>
+</td>
+</tr>
+<tr>
+</tr>
+<tr><td nowrap="" colspan="3" height="2">&nbsp;</td></tr>
+<tr bgcolor="#660033"><td nowrap="" colspan="3" height="2">&nbsp;</td></tr>
+<tr bgcolor="#83723D">
+        <td nowrap="" colspan="3" height="2" align="right"><b><a href="contact.php"> Contact Us</a></b>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      </tr>
+
+</tbody></table>
+
+<center>
+    <font face="verdana" color="#999999" size="1">
+    <noscript>
+    </noscript>
+    </font>
+  </center><table align="center" cellspacing="0" cellpadding="0" width="900" border="0">
+<tbody>
+<tr>
+<td align="center" valign="top" nowrap="" width="900" bgcolor="#ffffff">
+<table cellspacing="0" cellpadding="0" width="900" border="0">
+<tbody> 
+<tr><td nowrap="" width="586" bgcolor="#ffffff" colspan="2" height="20"><img height="1" alt="" src="images/clear.gif" width="1" border="0"></td></tr>
+<tr><td nowrap="" width="586" bgcolor="#ffffff" colspan="2" height="20"><font color="red">&nbsp;&nbsp;All fields tagged with * are mandatory.</font></td></tr>
+<tr align="center"> 
+<td> 
+<table cellspacing="0" cellpadding="0" width="100%" border="0" bgcolor="#ffffff">
+<tbody><tr><td>
+</td></tr>
+<tr>
+<td>
+<form name="sclrship" method="Post" action="">
+<table width="900" border="0">
+<tbody><tr height="2"><td align="justify" colspan="2" bgcolor="#CCCCCC"><strong>Personal Information</strong></td></tr>
+<tr>
+<td align="right">Name<span class="mandatory"><font color="red" size="1">*</font></span></td>
+<td><input class="formtest2" maxlength="60" size="40" border="0" id="name" name="name" tabindex="1" value="Mohammad Amanullah"></td>
+</tr>
+<tr>
+<td align="right">Date of Birth<span class="mandatory"><font color="red" size="1">*</font></span><br><font color="red" size="1">(MM-DD-YYYY)</font></td>
+<td align="left"><input type="text" tabindex="2" maxlength="30" size="18" border="0" name="dob" id="dob" value="05-10-2003" ></td>
+</tr>
+<tr>
+<td align="right">Gender<span class="mandatory"><font color="red" size="1">*</font></span></td>
+<td align="left"><select id="gender" name="gender" tabindex="3" >
+   <option value="">----Select----</option><option selected="" value="Male">Male</option><option value="Female">Female</option></select>
+</td></tr>
+<tr height="2"><td align="justify" colspan="2" bgcolor="#CCCCCC"><strong>Current Mailing Information</strong></td></tr>
+<tr>
+<td align="right">Address<span class="mandatory"><font color="red" size="1">*</font></span></td>
+<td align="left"><textarea name="address" id="address" rows="3" cols="30" tabindex="4">House no 84, Ladaura West, kurhani, Muzaffarpur, Bihar  843113</textarea><input type="hidden" name="frm" value="Y"> </td></tr>
+<tr>
+<td align="right">Tel No.</td>
+<td align="left"><input class="formtest2" maxlength="13" size="18" border="0" name="tel" id="tel" tabindex="5" value="9199686030"></td></tr>
+<tr>
+<td align="right">Mobile No.</td>
+<td><input class="formtest2" maxlength="13" size="18" border="0" id="mob" name="mob" tabindex="6" value="7561973554"></td>
+</tr>
+
+<tr height="2"><td align="justify" colspan="2" bgcolor="#CCCCCC"><strong>College Education Information</strong></td></tr>
+<tr>
+<td align="right">Name of Institution<span class="mandatory"><font color="red" size="1">*</font></span></td>
+<td>
+	<select id="inst" name="inst" tabindex="7"  onchange="getinstoth()">
+<option value="">------Select------</option>			<option value="Amity School of Engineering &amp; Technology, New Delhi">Amity School of Engineering &amp; Technology, New Delhi</option>
+			<option value="Amrita School of Engineering, Coimbatore">Amrita School of Engineering, Coimbatore</option>
+			<option value="Army Institute of Technology, Pune">Army Institute of Technology, Pune</option>
+			<option value="B. S. Abdur Rahman University, Chennai">B. S. Abdur Rahman University, Chennai</option>
+			<option value="Bannari Amman Institute of Technology, Sathyamangalam">Bannari Amman Institute of Technology, Sathyamangalam</option>
+			<option value="Bharati Vidyapeeth Deemed University College of Engineering, Pune, Pune">Bharati Vidyapeeth Deemed University College of Engineering, Pune, Pune</option>
+			<option value="Birla Institute of Technology and Science, Pilani, Pilani">Birla Institute of Technology and Science, Pilani, Pilani</option>
+			<option value="Birla Institute of Technology, Mesra, Ranchi">Birla Institute of Technology, Mesra, Ranchi</option>
+			<option value="Birsa Institute of Technology Sindri, Dhanbad">Birsa Institute of Technology Sindri, Dhanbad</option>
+			<option value="Chaitanya Bharathi Institute of Technology, Hyderabad">Chaitanya Bharathi Institute of Technology, Hyderabad</option>
+			<option value="College of Engineering, Guindy, Chennai">College of Engineering, Guindy, Chennai</option>
+			<option value="College of Engineering, Pune, Pune">College of Engineering, Pune, Pune</option>
+			<option value="Dehradun Institute of Technology, Dehradun">Dehradun Institute of Technology, Dehradun</option>
+			<option value="Delhi Technological University, New Delhi">Delhi Technological University, New Delhi</option>
+			<option value="Dhirubhai Ambani Institute of Information and Communication Technology, Gandhinagar">Dhirubhai Ambani Institute of Information and Communication Technology, Gandhinagar</option>
+			<option value="Dr. B. R. Ambedkar National Institute of Technology, Jalandhar">Dr. B. R. Ambedkar National Institute of Technology, Jalandhar</option>
+			<option value="Dwarkadas J. Sanghvi College of Engineering, Mumbai">Dwarkadas J. Sanghvi College of Engineering, Mumbai</option>
+			<option value="Faculty of Engineering &amp; Technology . Jamia Millia Islamia, New Delhi">Faculty of Engineering &amp; Technology . Jamia Millia Islamia, New Delhi</option>
+			<option value="Galgotia" s="" college="" of="" engineering="" and="" technology,="" greater="" noida'="">Galgotia's College of Engineering and Technology, Greater Noida</option>
+			<option value="Ganeshi Lal Bajaj Institute of Technology and Management, Greater Noida">Ganeshi Lal Bajaj Institute of Technology and Management, Greater Noida</option>
+			<option value="GMR Institute of Technology, Rajam">GMR Institute of Technology, Rajam</option>
+			<option value="Government College of Engineering, Amravati, Amravati">Government College of Engineering, Amravati, Amravati</option>
+			<option value="GSS Institute of Technology, Bangalore">GSS Institute of Technology, Bangalore</option>
+			<option value="Guru Nanak Dev Engineering College, Ludhiana, Ludhiana">Guru Nanak Dev Engineering College, Ludhiana, Ludhiana</option>
+			<option value="Harcourt Butler Technological Institute, Kanpur">Harcourt Butler Technological Institute, Kanpur</option>
+			<option value="Indian Institute of Information Technology, Allahabad, Allahabad">Indian Institute of Information Technology, Allahabad, Allahabad</option>
+			<option value="Indian Institute of Technology Bhubaneswar, Bhubaneswar">Indian Institute of Technology Bhubaneswar, Bhubaneswar</option>
+			<option value="Indian Institute of Technology Gandhinagar, Gandhinagar">Indian Institute of Technology Gandhinagar, Gandhinagar</option>
+			<option value="Indian Institute of Technology Hyderabad, Hyderabad">Indian Institute of Technology Hyderabad, Hyderabad</option>
+			<option value="Indian Institute of Technology Indore, Indore">Indian Institute of Technology Indore, Indore</option>
+			<option value="Indian Institute of Technology Jodhpur, Jodhpur">Indian Institute of Technology Jodhpur, Jodhpur</option>
+			<option value="Indian Institute of Technology Mandi, Mandi">Indian Institute of Technology Mandi, Mandi</option>
+			<option value="Indian Institute of Technology Patna, Patna">Indian Institute of Technology Patna, Patna</option>
+			<option value="Indian Institute of Technology Ropar, Rupnagar">Indian Institute of Technology Ropar, Rupnagar</option>
+			<option value="Indian Institute of Technology, Banaras Hindu University, Varanasi">Indian Institute of Technology, Banaras Hindu University, Varanasi</option>
+			<option value="Indian Institute of Technology, Bombay, Mumbai">Indian Institute of Technology, Bombay, Mumbai</option>
+			<option value="Indian Institute of Technology, Delhi, New Delhi">Indian Institute of Technology, Delhi, New Delhi</option>
+			<option value="Indian Institute of Technology, Guwahati, Guwahati">Indian Institute of Technology, Guwahati, Guwahati</option>
+			<option value="Indian Institute of Technology, Kanpur, Kanpur">Indian Institute of Technology, Kanpur, Kanpur</option>
+			<option value="Indian Institute of Technology, Kharagpur, Kharagpur">Indian Institute of Technology, Kharagpur, Kharagpur</option>
+			<option value="Indian Institute of Technology, Madras, Chennai">Indian Institute of Technology, Madras, Chennai</option>
+			<option value="Indian Institute of Technology, Roorkee, Roorkee">Indian Institute of Technology, Roorkee, Roorkee</option>
+			<option value="Indian School of Mines, Dhanbad">Indian School of Mines, Dhanbad</option>
+			<option value="Indrapastha institute of Information technology, Hyderabad">Indrapastha institute of Information technology, Hyderabad</option>
+			<option value="Indraprastha institute of information Technology, Okhla">Indraprastha institute of information Technology, Okhla</option>
+			<option value="Institute of Technology, Nirma University, Ahmedabad">Institute of Technology, Nirma University, Ahmedabad</option>
+			<option value="International Institute of Information Technology, Hyderabad, Hyderabad">International Institute of Information Technology, Hyderabad, Hyderabad</option>
+			<option value="K. J. Somaiya Institute of Engineering and Information Technology, Mumbai">K. J. Somaiya Institute of Engineering and Information Technology, Mumbai</option>
+			<option value="Maharaja Agrasen Institute of Technology, New Delhi">Maharaja Agrasen Institute of Technology, New Delhi</option>
+			<option value="Maharaja Surajmal Institute of Technology, New Delhi">Maharaja Surajmal Institute of Technology, New Delhi</option>
+			<option value="Maharashtra Institute of Technology, Pune">Maharashtra Institute of Technology, Pune</option>
+			<option value="Malaviya National Institute of Technology, Jaipur">Malaviya National Institute of Technology, Jaipur</option>
+			<option value="Manipal Institute of Technology, Manipal">Manipal Institute of Technology, Manipal</option>
+			<option value="Maulana Azad National Institute of Technology, Bhopal">Maulana Azad National Institute of Technology, Bhopal</option>
+			<option value="Mepco Schlenk Engineering College, Sivakasi">Mepco Schlenk Engineering College, Sivakasi</option>
+			<option value="Model Engineering College, Kochi">Model Engineering College, Kochi</option>
+			<option value="Motilal Nehru National Institute of Technology, Allahabad, Allahabad">Motilal Nehru National Institute of Technology, Allahabad, Allahabad</option>
+			<option value="National Institute of Engineering, Mysore">National Institute of Engineering, Mysore</option>
+			<option value="National Institute of Technology Arunachal Pradesh">National Institute of Technology Arunachal Pradesh</option>
+			<option value="National Institute of Technology Calicut">National Institute of Technology Calicut</option>
+			<option value="National Institute of Technology Delhi">National Institute of Technology Delhi</option>
+			<option value="National Institute of Technology Karnataka">National Institute of Technology Karnataka</option>
+			<option value="National Institute of Technology Karnataka, Surathkal">National Institute of Technology Karnataka, Surathkal</option>
+			<option value="National Institute of Technology Manipur">National Institute of Technology Manipur</option>
+			<option value="National Institute of Technology Meghalaya">National Institute of Technology Meghalaya</option>
+			<option value="National Institute of Technology Mizoram">National Institute of Technology Mizoram</option>
+			<option value="National Institute of Technology Nagaland">National Institute of Technology Nagaland</option>
+			<option value="National Institute of Technology Sikkim">National Institute of Technology Sikkim</option>
+			<option value="National Institute of Technology Uttarakhand">National Institute of Technology Uttarakhand</option>
+			<option value="National Institute of Technology, Agartala" selected="">National Institute of Technology, Agartala</option>
+			<option value="National Institute of Technology, Durgapur">National Institute of Technology, Durgapur</option>
+			<option value="National Institute of Technology, Goa">National Institute of Technology, Goa</option>
+			<option value="National Institute of Technology, Hamirpur">National Institute of Technology, Hamirpur</option>
+			<option value="National Institute of Technology, Jamshedpur">National Institute of Technology, Jamshedpur</option>
+			<option value="National Institute of Technology, Kurukshetra">National Institute of Technology, Kurukshetra</option>
+			<option value="National Institute of Technology, Patna">National Institute of Technology, Patna</option>
+			<option value="National Institute of Technology, Puducherry">National Institute of Technology, Puducherry</option>
+			<option value="National Institute of Technology, Raipur">National Institute of Technology, Raipur</option>
+			<option value="National Institute of Technology, Rourkela">National Institute of Technology, Rourkela</option>
+			<option value="National Institute of Technology, Silchar">National Institute of Technology, Silchar</option>
+			<option value="National Institute of Technology, Srinagar">National Institute of Technology, Srinagar</option>
+			<option value="National Institute of Technology, Tiruchirappalli">National Institute of Technology, Tiruchirappalli</option>
+			<option value="National Institute of Technology, Warangal">National Institute of Technology, Warangal</option>
+			<option value="Netaji Subhas Institute of Technology, New Delhi">Netaji Subhas Institute of Technology, New Delhi</option>
+			<option value="Oriental Institute of Science and Technology, Bhopal">Oriental Institute of Science and Technology, Bhopal</option>
+			<option value="P.E.S. College of Engineering, Mandya">P.E.S. College of Engineering, Mandya</option>
+			<option value="P.E.S. Institute of Technology, Bangalore">P.E.S. Institute of Technology, Bangalore</option>
+			<option value="P.S.G. College of Technology, Coimbatore">P.S.G. College of Technology, Coimbatore</option>
+			<option value="PEC University of Technology, Chandigarh">PEC University of Technology, Chandigarh</option>
+			<option value="R.V. College of Engineering, Bangalore">R.V. College of Engineering, Bangalore</option>
+			<option value="Rajagiri School of Engineering and Technology, Kochi">Rajagiri School of Engineering and Technology, Kochi</option>
+			<option value="S V National Institute of Technology, Surat">S V National Institute of Technology, Surat</option>
+			<option value="Sardar Patel College of Engineering, Mumbai">Sardar Patel College of Engineering, Mumbai</option>
+			<option value="Sardar Vallabhbhai National Institute of Technology, Surat">Sardar Vallabhbhai National Institute of Technology, Surat</option>
+			<option value="Shri Govindram Seksaria Institute of Technology and Science, Indore">Shri Govindram Seksaria Institute of Technology and Science, Indore</option>
+			<option value="Shri Mata Vaishno Devi University, Jammu &amp; Kashmir">Shri Mata Vaishno Devi University, Jammu &amp; Kashmir</option>
+			<option value="Sir M. Visvesvaraya Institute of Technology, Bangalore">Sir M. Visvesvaraya Institute of Technology, Bangalore</option>
+			<option value="Thapar University, Patiala">Thapar University, Patiala</option>
+			<option value="Thiagarajar College of Engineering, Madurai">Thiagarajar College of Engineering, Madurai</option>
+			<option value="University College of Engineering, Osmania University, Hyderabad">University College of Engineering, Osmania University, Hyderabad</option>
+			<option value="University Institute of Engineering and Technology, Panjab University, Chandigarh">University Institute of Engineering and Technology, Panjab University, Chandigarh</option>
+			<option value="Veermata Jijabai Technological Institute, Mumbai">Veermata Jijabai Technological Institute, Mumbai</option>
+			<option value="Vellore Institute of Technology, Vellore">Vellore Institute of Technology, Vellore</option>
+			<option value="Visvesvaraya National Institute of Technology, Nagpur">Visvesvaraya National Institute of Technology, Nagpur</option>
+			<option value="West Bengal University of Technology, Kolkata">West Bengal University of Technology, Kolkata</option>
+			<option value="Others">Others</option>
+			 
+				   			     
+	</select><br><div id="instoth" name="instoth" style="display: none"><input class="formtest2" name="instothr" id="instothr" tabindex="8" maxlength="100" value="" readonly="readonly" size="37" border="0">
+					</div>
+</td>
+</tr>
+<tr>
+<td align="right">Degree Programme<span class="mandatory"><font color="red" size="1">*</font></span></td>
+<td><select id="dgre" name="dgre" tabindex="9"  onchange="getdgreoth()">
+	<option value="">----Select----</option><option selected="" value="B.Tech">B.Tech</option><option value="B.E">B.E</option><option value="Dual Degree">Dual Degree</option><option value="Integrated M.tech">Integrated M.tech</option>			<option value="Others">Others</option>
+				    
+			  </select><input type="hidden" id="chk" name="chk" value="">
+			  <br><div id="dgreoth" name="dgreoth" style="display: none"><input class="formtest2" name="dgreothr" id="dgreothr" tabindex="10" maxlength="20" value="" readonly="readonly" size="37" border="0">
+					</div>
+</td>
+</tr>
+			  
+<tr><td align="right">Discipline (Specialization)<span class="mandatory"><font color="red" size="1">*</font></span></td>
+<td><select id="spec" name="spec" tabindex="11"  onchange="getareaoth()">
+				  <option value="">------Select------</option>			<option value="Biochemical Engineering">Biochemical Engineering</option>
+			<option value="Biomedical Engineering">Biomedical Engineering</option>
+			<option value="Biotechnology">Biotechnology</option>
+			<option value="Chemical Engineering" selected="">Chemical Engineering</option>
+			<option value="Civil Engineering">Civil Engineering</option>
+			<option value="Computer Science &amp; Engineering">Computer Science &amp; Engineering</option>
+			<option value="Electrical and Electronics">Electrical and Electronics</option>
+			<option value="Electrical Engineering">Electrical Engineering</option>
+			<option value="Electrical Engineering (Power)">Electrical Engineering (Power)</option>
+			<option value="Electronics and Communication">Electronics and Communication</option>
+			<option value="Engineering Physics">Engineering Physics</option>
+			<option value="Information Technology">Information Technology</option>
+			<option value="Instrumentation">Instrumentation</option>
+			<option value="Mathematics &amp; Computing">Mathematics &amp; Computing</option>
+			<option value="Mechanical Engineering">Mechanical Engineering</option>
+			<option value="Production and Industrial Engineering">Production and Industrial Engineering</option>
+			<option value="Textile Technology">Textile Technology</option>
+			<option value="Others">Others</option>
+			 
+			  </select><br><div id="aroth" name="aroth" style="display: none"><input class="formtest2" name="arothr" id="arothr" tabindex="12" maxlength="40" value="" readonly="readonly" size="37" border="0">
+					</div>
+</td>
+</tr>
+
+<tr>
+<td align="right">Performance at the end of 3rd/5th semester<br>Grading Type <span class="mandatory"><font color="red" size="1">*</font></span></td>
+<td><p>
+  <select id="grdtyp" name="grdtyp" tabindex="13" >
+      
+	  <option value="">----Select----</option><option value="%">Percentage</option><option value=" CGPA out of 4">CGPA out of 4</option><option value=" CGPA out of 6">CGPA out of 6</option><option value=" CGPA out of 9">CGPA out of 9</option><option selected="" value=" CGPA out of 10">CGPA out of 10</option>    </select>
+  </p>
+</td>
+</tr>
+<tr>
+<td align="right">CGPA/Marks (%)<span class="mandatory"><font color="red" size="1">*</font></span></td>
+<td><p><input class="formtest2" maxlength="10" size="15" border="0" name="cgpa" id="cgpa" tabindex="14" value="8.230"></p></td>
+</tr>      
+<tr><td align="right"><strong>#</strong>Rank<span class="mandatory"><font color="red" size="1">*</font></span></td>
+<td> <input class="formtest2" maxlength="2" size="18" border="0" name="rank" tabindex="15" id="rank" value="8">&nbsp;in the class of&nbsp;<input class="formtest2" maxlength="4" size="18" border="0" name="class" tabindex="16" id="class" value="74" ></td>
+</tr>
+
+<tr height="2"><td align="justify" colspan="2" bgcolor="#CCCCCC"><strong>Research Interest</strong></td></tr>
+<tr>
+<td align="right">Area of Interest<span class="mandatory"><font color="red" size="1">*</font></span><br><font color="red" size="2">(max char 200)</font></td>
+<td><textarea name="areainstrst" id="=&quot;areainstrst&quot;" rows="3" cols="30" tabindex="17" readonly="readonly">Machine Learning, Computer Vision, Natural Language Processing, Deep Learning, Data Mining</textarea></td></tr>
+<tr>
+<td align="right">Statement of Interest<span class="mandatory"><font color="red" size="1">*</font></span><br><font color="red" size="2">(max char 1000)</font></td>
+<td><textarea name="stmntinstrst" id="stmntinstrst" rows="3" cols="30" tabindex="18" readonly="readonly">As a budding data scientist, I'm deeply passionate about machine learning, computer vision, and NLP. I'm thrilled about the internship opportunity at the Indian Institute of Technology Delhi (IITD). The groundbreaking research at IITD in these areas excites me, and I'm eager to contribute my skills to propel ongoing projects. With a solid foundation in computer science and practical experience in ML and NLP, I feel well-prepared for this role. Collaborating with talented researchers at IITD presents a golden opportunity to expand my knowledge and make significant contributions. This internship promises invaluable hands-on experience to deepen my expertise in AI. With dedication, creativity, and strong analytical skills, I'm confident in my ability to thrive in the dynamic environment at IITD. I'm enthusiastic about bringing my energy and expertise to the team, believing this experience will not only enrich my understanding but also propel me forward in the field of AI.</textarea></td>
+</tr>
+<tr height="2"><td align="justify" colspan="2" bgcolor="#CCCCCC"><strong>Other Academic Achievement</strong></td></tr>
+<tr>
+<td align="right">Achievements<br><font color="red" size="2">(max char 500)</font></td>
+<td><textarea name="achvmnts" id="=&quot;achvmnts&quot;" rows="3" cols="30" tabindex="19" readonly="readonly">Achieved within Top 20 in e-Yantra Robotics Competition 2023-24
+
+Achieved the Runner-Up position in the robotics competition hosted at National Institute Of Technology Agartala
+
+Achieved First Place in the International Mathematics Olympiad (IMO) during the First level in both 2017 and 2018.
+</textarea></td></tr>
+
+<tr><td align="justify" colspan="2"><strong>Note: #</strong>
+The rank should be in whole discipline/branch in the preceeding year/semester.</td>
+</tr>
+<tr><td align="justify" colspan="2"><strong>Note:</strong>
+	The application e-mail should be issused by the attending institute for eligibility in the programme.</td>
+	</tr>
+<tr height="2"><td align="justify" colspan="2" bgcolor="#CCCCCC">&nbsp;</td></tr>	  
+<tr><td align="center" colspan="4"><strong></strong><font color="#FF0000"></font><input type="submit" tabindex="20" id="submit" name="submit" value="Next" onclick="clrcmb()"></td></tr>
+</tbody></table>
+</form></td>
+</tr>
+
+</tbody></table></td>
+</tr></tbody></table></td></tr>
+<tr align="center">
+        <td valign="top" nowrap="" width="900" bgcolor="#808080"> 
+          <table cellspacing="0" cellpadding="0" width="900" border="0">
+            <tbody>
+              <tr align="center"> 
+                <td valign="center" nowrap=""><font size="
+				2">Developed and Maintained By : CSC IIT Delhi<br>
+Copyright Â© 2013 Indian Institute of Technology Delhi<br>
+Best Viewed in 1024X768 or above Resolution </font></td>
+              </tr>
+  <tr align="center">
+        <td valign="top" nowrap="" width="900" bgcolor="#808080">&nbsp; </td></tr>            
+            </tbody>
+          </table>
+          </td></tr>
+    
+      
+  
+
+</tbody></table></div>
+
+<script language="javascript">
+var call1=new calendar3(document.forms['sclrship'].elements['dob']);
+</script>
+
+</body></html>
